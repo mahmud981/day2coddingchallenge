@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="author" content="Dave Gray">
+    <meta name="description" content="Store Hours for The Little Taco Shop">
+    <title>LTS Hours</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
     <header class="header">
-        <h1 class="header__h1">Great Stake House Hours</h1>
+        <h1 class="header__h1">Little Taco Shop</h1>
         <nav class="header__nav">
             <ul class="header__ul">
                 <li>
@@ -18,39 +24,45 @@
                     <a href="/#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
-
                 </li>
             </ul>
         </nav>
-
     </header>
+
     <section class="hero">
         <figure>
-            <img src="img/lobster-tail.png" alt="" width="1000" height="667">
-            <figcaption class="offscreen">A Lobster tail</figcaption>
+            <img src="img/sirlon.png" alt="A Tray of Tasty Tacos" title="We love trays of tacos!"
+                width="1000" height="667">
+            <figcaption class="offscreen">
+                A Tray of Tasty Tacos
+            </figcaption>
         </figure>
     </section>
-    <main>
-        <article id="hours">
-            <p> 
-                We are open 7 days a week
+
+    <main class="main">
+        <article class="main__article">
+            <h2>Hours</h2>
+            <p>
+                We are open 7 days a week!
             </p>
             <dl>
-                <dt>
-                    Monday-friday
-                </dt>
-                <dd>7am-9pm</dd>
-                <dt>
-                    Saturday-Sunday
-                </dt>
-                <dd>9am-9pm</dd>
+                <dt>Sunday-Thursday</dt>
+                <dd>11am-9pm</dd>
+                <dt>Friday-Saturday</dt>
+                <dd>11am-11pm</dd>
             </dl>
         </article>
-        <a href="#">Back to top</a>
     </main>
-<hr>
-    <footer>Copyright &copy; Great stake house</footer>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">Great Stake House</span>
+        </p>
+    </footer>
+</body>
+
+</html>
